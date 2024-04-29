@@ -4,7 +4,8 @@ def menu():
     print("Gestor creado: ")
     gestor.mostrarArreglo()
     opcion="0"
-    print("""Menu de opciones: 
+    while opcion != "7":
+        print("""Menu de opciones: 
 1. Cargar factura
 2. Calcular total facturado para una sucursal
 3. Mostrar la sucursal con mayor facturación para un día
@@ -13,7 +14,6 @@ def menu():
 6. Mostrar arreglo
 7. Salir
 """)
-    while opcion != "7":
         opcion=input("Ingrese número de opción: ")
         if opcion == "1":
             try:
